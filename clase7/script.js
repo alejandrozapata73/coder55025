@@ -137,20 +137,111 @@ console.log( nombreReverse )
 
 
 // //Ejemplo Cargar Array con entradas
-// //Declaraciòn de array vacío y variable para determinar cantidad
-// const listaNombres = [];
-// let   cantidad     = 5;
-// //Empleo de do...while para cargar nombres en el array por prompt()
+//Declaraciòn de array vacío y variable para determinar cantidad
+const listaNombres = [];
+let   cantidad     = 5;
+
+
+//Empleo de do...while para cargar nombres en el array por prompt()
 // do{
 //    let entrada = prompt("Ingresar nombre");
-//    listaNombres.push(entrada);
-// //    listaNombres.push(entrada.toUpperCase());
-//    console.log(listaNombres.length);
+//     listaNombres.push(entrada);
+//     console.log(listaNombres)// ["carlos","karina"]
+//    // listaNombres.push(entrada.toUpperCase());
+//    console.log(listaNombres.length);//
+//    //.......1..............!=...5
 // }while(listaNombres.length != cantidad)
 // //Concatenamos un nuevo array de dos elementos
+
+
 // const nuevaLista = listaNombres.concat(["ANA","EMA"]);
 // //Salida con salto de línea usando join
 // alert(nuevaLista.join("\n"));
 
 
 
+const objeto1 = { 
+   id: 1, 
+   producto: "Arroz" 
+};
+
+const objeto3 = { 
+   id: 1, 
+   producto: "Arroz" 
+};
+
+
+//................0....................1....................2
+const array   = [objeto1, {  id: 2, producto: "Fideo" } , objeto3 ];
+
+
+array.push({ id: 3, producto: "Pan" });
+
+const objeto4 = { 
+   id: 6, 
+   producto: "PapaFritas" 
+};
+
+array.push(objeto4)
+
+
+
+
+
+// const productos = [
+//    { id: 1, producto: "Arroz" },
+//    { id: 2,  producto: "Fideo" },
+//    { id: 3,  producto: "Pan" },
+//    {id: 4, producto: "masa"}
+               
+//          ];
+
+
+// console.log(productos[0])
+
+// for (const producto of productos) {
+//    //   console.log(producto.id);
+//      console.log(producto.producto);
+
+//    console.log("hola")
+// }
+
+
+
+// for(let i=0;i<productos.length;i++){
+
+
+// }
+
+
+
+class Producto {
+   constructor(nombre, precio) {
+       this.nombre  = nombre.toUpperCase();
+       this.precio  = parseFloat(precio);
+       this.vendido = false;
+   }
+   sumaIva() {
+       this.precio = this.precio * 1.21;
+   }
+}
+//Declaramos un array de productos para almacenar objetos
+const productos = [];
+
+productos.push(new Producto("arroz", "125"));
+productos.push(new Producto("fideo", "70"));
+productos.push(new Producto("pan", "50"));
+
+
+
+
+
+
+
+//Iteramos el array con for...of para modificarlos a todos
+for (const producto of productos){//
+   producto.sumaIva()
+}
+
+
+console.log(productos)
