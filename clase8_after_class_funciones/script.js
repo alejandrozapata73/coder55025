@@ -101,7 +101,8 @@ let productos = [
     {
         id: 1,
         nombre: "oreo",
-        precio: 150
+        precio: 150,
+        stock:50
 
     },
     {
@@ -144,4 +145,4 @@ let mayoresA150 = productos.filter((elemento)=>elemento.precio>150)
 
 console.log(mayoresA150)
 
-let sumaTotal = productos.reduce()
+let sumaTotal = productos.reduce((acumulador,elemento)=>acumulador + elemento.precio,0)
