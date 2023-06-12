@@ -1,0 +1,28 @@
+1:
+-posibilidad de entrega en equipos..(antes de martes 13)-individual-maximo 5 personas
+-habilidades blandas... 
+-soft skill ()
+-hard skill (tecnico)
+
+
+2: posiblidad de proyecto armado en clase...(individual)
+
+
+3: proyecto individual/ proyecto propio 
+-No evalua diseño / no responsive 
+-Funcionalidad
+-
+-
+
+*
+
+Niveles de proyectos:
+
+nivel 1: https://mguidocaruso.github.io/AlPrestamo/
+
+nivel 2: https://vanifederici.github.io/mono-galactico/
+
+nivel 3: https://bcoalova.github.io/CODER-js-Tienda/index.html
+
+
+
